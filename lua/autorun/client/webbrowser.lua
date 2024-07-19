@@ -449,10 +449,8 @@ local function webbrowser(a, b, c, line)
 	ShowPanel(url)
 end
 
-concommand.Add("webbrowser", webbrowser, nil)
-concommand.Add("browser", webbrowser, nil)
-concommand.Add("open", webbrowser, nil)
-local webbrowser_f1_open = CreateClientConVar("webbrowser_f1_open", "1", true)
+concommand.Add("webbrowser_open", webbrowser, nil)
+local webbrowser_f1_open = CreateClientConVar("webbrowser_f1_open", "0", true)
 local f1key = input.LookupKeyBinding(KEY_F1)
 
 local rec
